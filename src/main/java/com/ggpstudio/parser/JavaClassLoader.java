@@ -29,7 +29,7 @@ public class JavaClassLoader {
         String sanitizedUrlString = specifiedFile.getAbsolutePath().replace(packageNameUrl, "").replace(fileName, "").replace("//", "/");
 
         String os = System.getProperty("os.name");
-        String fileSystem = os.contains("Windows") ? "C://" : "file:";
+        String fileSystem = os.contains("Windows") ? "C:\\" : "file:";
 
         URL sanitizedUrl = new URL(fileSystem + sanitizedUrlString);
         return new URL[]{sanitizedUrl};

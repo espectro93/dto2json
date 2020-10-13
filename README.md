@@ -1,4 +1,4 @@
-# Dto 2 Json Parser
+# Dto 2 Json CLI Parser
 
 - [Installation](#installation)
 - [Features](#features)
